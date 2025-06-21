@@ -1,13 +1,13 @@
 # Connect-Four-Game
 <b>Frontend:</b>
-index (HTML): User interface for the game
-styles.css: Handles the game's visual styling
-script.js: Manages client-side logic (e.g., user clicks, board updates)
+index (HTML): User interface for the game<br>
+styles.css: Handles the game's visual styling <br>
+script.js: Manages client-side logic (e.g., user clicks, board updates) <br>
 
 <b>Backend:</b>
-PHP (e.g., game.php, register.php, check_status.php): Handles server-side game logic, board state, player registration, and checking win conditions
-SQL (this.sql): Likely contains table creation and data structure for storing game state
-db_config.php: Stores database connection details
+PHP (e.g., game.php, register.php, check_status.php): Handles server-side game logic, board state, player registration, and checking win conditions.<br>
+SQL (this.sql): Likely contains table creation and data structure for storing game state.<br>
+db_config.php: Stores database connection details.<br>
 
 <b>How Multiplayer Gameplay Works:</b>
 <br>
