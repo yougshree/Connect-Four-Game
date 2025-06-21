@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    
+    background-color: black;
+        background-image: url('img2.webp');
+        background-size: cover; 
+        background-repeat: no-repeat;
+        background-position: center; 
+       
+        display: block;
+        max-width: 100%;
+        height: auto;    
+}
+.small-image {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    width: 200px;
+    height: 200px; 
+    background-image: url('img6.jpg'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(7, 50px);
+    gap: 5px;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(240, 167, 167);
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+#players {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    color:rgba(255, 249, 254);
+    font-weight: bold;
+    font-size: 30px;
+}

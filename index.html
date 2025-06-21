@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect Four</title>
+    <style>
+        .start-game-btn {
+            background-color: pink;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .start-game-btn:hover {
+            background-color: #45a049;
+        }
+
+        #player_name,
+        #color {
+
+            font-size: 12px;
+            padding: 10px;
+            margin: 10px 0;
+
+        }
+
+        #info {
+            color: white;
+            text-align: justify;
+            font-size: 20px;
+            line-height: 1.8;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="small-image"></div>
+    <div id="registration">
+        <h1 style="color:whitesmoke;">Player Registration</h1>
+        <form id="registerForm" action="register.php" method="POST">
+            <div id="info">
+                <p>Connect Four is a two player online game. The game board consist of a 6-row by 7-column grid.</p>
+                <h2><i><u>Rules of the game:</u></i></h2>
+                <p>
+                    <li>It is a two player game where each player has a set of colored tokens (usually <span
+                            style="color:red;">Red</span> and <span style="color:yellow;">Yellow</span>).</li>
+
+                    <li>On each turn, a player drops one of their tokens from the top into any of the columns.</li>
+                    <li>The goal is to be the first to get four of your tokens in a row—either horizontally, vertically,
+                        or diagonally.</li>
+                    <li>The game ends immediately when a player achieves this.</li>
+                    <li>If the board fills up completely without any player achieving four in a row, the game is
+                        considered a draw.
+
+                    </li>
+                </p>
+            </div>
+            <input type="text" id="player_name" name="player_name" placeholder="Player Name" required>
+            <select id="color" name="color" required>
+                <option value="red">Red</option>
+                <option value="yellow">Yellow</option>
+            </select>
+            <button type="submit" class="start-game-btn">Start Game</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+1.Place the folder in ....\xampp\htdocs\
+2.Run Apache server and MySQL from xampp control panel
+
+
+See database at http://localhost/phpmyadmin/
+
+Player 1:
+http://localhost/connect_four/index.html
+
+
+### start ngrok
+run in cmd: ngrok http 80
+
+https://d648-2404-1c40-1b1-d0a0-1154-555c-15bb-a0d9.ngrok-free.app/connect_four/index.html
+
+

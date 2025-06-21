@@ -1,0 +1,15 @@
+CREATE DATABASE Connect_four;
+
+CREATE TABLE players (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    color VARCHAR(10) NOT NULL
+);
+
+CREATE TABLE game_state (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    board TEXT NOT NULL,
+    current_player VARCHAR(10) NOT NULL,
+    player1_moves INT DEFAULT 0,
+    player2_moves INT DEFAULT 0
+);
